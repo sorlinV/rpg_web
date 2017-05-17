@@ -61,6 +61,16 @@ function do_action(attaquant, attack) {
     return attaquant;
 }
 
+function tab_contain(tab, value) {
+    console.log(tab + " : conatiain ? : " + value);
+    for (let i = 0; i < tab.length; i++) {
+        if (tab[i] === value) {
+            return true;
+        }
+    }
+    return false;
+}
+
 let attacks = {
     Abime: {
         name: "Abime",
@@ -72,7 +82,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu)) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu)) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -100,7 +110,7 @@ let attacks = {
         type_att: "boost+def",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -128,7 +138,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -156,7 +166,7 @@ let attacks = {
         type_att: "ct-enemy",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -184,7 +194,7 @@ let attacks = {
         type_att: "boost+att",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -212,7 +222,7 @@ let attacks = {
         type_att: "boost+spe",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -240,7 +250,7 @@ let attacks = {
         type_att: "boost+def",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -268,7 +278,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -296,7 +306,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -324,7 +334,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -352,7 +362,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -380,7 +390,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -408,7 +418,7 @@ let attacks = {
         type_att: "boost+def",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -436,7 +446,7 @@ let attacks = {
         type_att: "boost+def",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -464,7 +474,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -492,7 +502,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -520,7 +530,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         attaquant = do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -548,7 +558,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         attaquant = do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -575,7 +585,7 @@ let attacks = {
         type_att: "pv-",
         action: function(attaquant, attack) {
             if (attaquant.attacks[attack.name].pp > 0) {
-                if (!attaquant.enemy.type.find(attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
+                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
                     if (Math.random <= attaquant.attacks[attack.name].pre) {
                         attaquant = do_action(attaquant, attack);
                         menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
@@ -741,7 +751,7 @@ let pkms = [{
 }, {
     name: "Chenipan",
     img: "img/pkm/Chenipan.png",
-    type: ["insect"], //45 - 30 - 35 - 45 - 20
+    type: ["insect"],
     pv: 45,
     pv_max: 45,
     att: 30,
@@ -761,7 +771,7 @@ function create_buttons(attacks) {
     for (attack in attacks) {
         let button = document.createElement('button');
         button.textContent = attacks[attack].name;
-        console.log(attacks[attack].pp);
+        console.log(attacks[attack].type_imu);
         button.addEventListener("click", function() {
             player = attacks[attack].action(player, attacks[attack]);
         });
