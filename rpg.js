@@ -62,7 +62,6 @@ function do_action(attaquant, attack) {
 }
 
 function tab_contain(tab, value) {
-    console.log(tab + " : conatiain ? : " + value);
     for (let i = 0; i < tab.length; i++) {
         if (tab[i] === value) {
             return true;
@@ -70,6 +69,27 @@ function tab_contain(tab, value) {
     }
     return false;
 }
+let action = function(attaquant, attack) {
+    if (attaquant.attacks[attack.name].pp > 0) {
+        if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu)) {
+            if (Math.random <= attaquant.attacks[attack.name].pre) {
+                do_action(attaquant, attack);
+                menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`;
+            }
+        } else {
+            if (Math.random <= attaquant.attacks[attack.name].pre) {
+                menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`;
+            }
+        }
+        attaquant.attacks[attack.name].pp--;
+        aff_lifebar(player);
+        return attaquant;
+    } else {
+        menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
+        aff_lifebar(player);
+        return false;
+    }
+};
 
 let attacks = {
     Abime: {
@@ -80,25 +100,7 @@ let attacks = {
         pre: 0.3,
         pui: 1000000,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu)) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Acidarmure: {
         name: "Acidarmure",
@@ -108,25 +110,7 @@ let attacks = {
         pre: 1,
         pui: 20,
         type_att: "boost+def",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Acide: {
         name: "Acide",
@@ -136,25 +120,7 @@ let attacks = {
         pre: 1,
         pui: 40,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Adaptation: {
         name: "Adaptation",
@@ -164,25 +130,7 @@ let attacks = {
         pre: 1,
         pui: -1,
         type_att: "ct-enemy",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Affutage: {
         name: "Affutage",
@@ -192,25 +140,7 @@ let attacks = {
         pre: 1,
         pui: 10,
         type_att: "boost+att",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Amnesie: {
         name: "Amnesie",
@@ -220,25 +150,7 @@ let attacks = {
         pre: 1,
         pui: 20,
         type_att: "boost+spe",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Armure: {
         name: "Armure",
@@ -248,25 +160,7 @@ let attacks = {
         pre: 1,
         pui: 10,
         type_att: "boost+def",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Balayage: {
         name: "Balayage",
@@ -276,25 +170,7 @@ let attacks = {
         pre: 0.9,
         pui: 50,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Bec_vrille: {
         name: "Bec_vrille",
@@ -304,25 +180,7 @@ let attacks = {
         pre: 1,
         pui: 80,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Belier: {
         name: "Belier",
@@ -332,25 +190,7 @@ let attacks = {
         pre: 0.85,
         pui: 90,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Blizzard: {
         name: "Blizzard",
@@ -360,25 +200,7 @@ let attacks = {
         pre: 0.9,
         pui: 120,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Bomb_oeuf: {
         name: "Bomb_oeuf",
@@ -388,25 +210,7 @@ let attacks = {
         pre: 0.75,
         pui: 100,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Bouclier: {
         name: "Bouclier",
@@ -416,25 +220,7 @@ let attacks = {
         pre: 1,
         pui: 20,
         type_att: "boost+def",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Boul_armure: {
         name: "Boul_armure",
@@ -444,25 +230,7 @@ let attacks = {
         pre: 1,
         pui: 10,
         type_att: "boost+def",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Bulles_D_O: {
         name: "Bulles_D_O",
@@ -472,25 +240,7 @@ let attacks = {
         pre: 1,
         pui: 65,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Cascade: {
         name: "Cascade",
@@ -500,25 +250,7 @@ let attacks = {
         pre: 1,
         pui: 80,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Charge: {
         name: "Charge",
@@ -528,25 +260,7 @@ let attacks = {
         pre: 0.95,
         pui: 35,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        attaquant = do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Choc_mental: {
         name: "Choc_mental",
@@ -556,25 +270,7 @@ let attacks = {
         pre: 1,
         pui: 50,
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        attaquant = do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
     Combo_griffe: {
         name: "Combo_griffe",
@@ -583,25 +279,7 @@ let attacks = {
         pp: 0.8,
         pui: 18 * (Math.random() * 4 + 1),
         type_att: "pv-",
-        action: function(attaquant, attack) {
-            if (attaquant.attacks[attack.name].pp > 0) {
-                if (!tab_contain(attaquant.enemy.type, attaquant.attacks[attack.name].type_imu) || attaquant.attacks[attack.name].type_imu === undefined) {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        attaquant = do_action(attaquant, attack);
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name}`
-                    }
-                } else {
-                    if (Math.random <= attaquant.attacks[attack.name].pre) {
-                        menu.text = `${attaquant.name} utilise ${attaquant.attacks[attack.name].name} mais ${attaquant.enemy} est imunisé`
-                    }
-                }
-                attaquant.attacks[attack.name].pp--;
-                return attaquant;
-            } else {
-                menu.text = `${attaquant.attacks[attack.name].name} n'a plus de pp`;
-                return false;
-            }
-        }
+        action: action
     },
 }
 
@@ -767,16 +445,33 @@ let pkms = [{
     enemy: player
 }]
 
-function create_buttons(attacks) {
+function make_att_buttons(player, att) {
+    return function() {
+        player = att.action(player, att);
+    };
+}
+
+function create_buttons(player, attacks) {
     for (attack in attacks) {
         let button = document.createElement('button');
         button.textContent = attacks[attack].name;
-        console.log(attacks[attack].type_imu);
-        button.addEventListener("click", function() {
-            player = attacks[attack].action(player, attacks[attack]);
-        });
+        button.addEventListener("click", make_att_buttons(player, attacks[attack]));
         document.querySelector("main").appendChild(button);
     }
+    return player;
+}
+
+function aff_lifebar(player) {
+    let lifebar_player = document.querySelector("#playerbar");
+    let lifebar_enemy = document.querySelector("#enemybar");
+    lifebar_enemy.id = "enemybar";
+    lifebar_player.id = "playerbar";
+    lifebar_player.style.width = ((player.pv / player.pv_max) * 100).toString() + "px";
+    lifebar_player.style.height = "1em";
+    lifebar_player.style.background = "red";
+    lifebar_enemy.style.width = ((player.enemy.pv / player.enemy.pv_max) * 100).toString() + "px";
+    lifebar_enemy.style.height = "1em";
+    lifebar_enemy.style.background = "green";
 }
 
 document.querySelector("button").addEventListener("click", function() {
@@ -790,5 +485,6 @@ document.querySelector("button").addEventListener("click", function() {
     enemy_aff.src = `${enemy.img}`
     document.querySelector("main").appendChild(player_aff);
     document.querySelector("main").appendChild(enemy_aff);
-    create_buttons(player.attacks);
+    player = create_buttons(player, player.attacks);
+    aff_lifebar(player)
 });
