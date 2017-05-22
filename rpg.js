@@ -3500,3 +3500,15 @@ document.querySelector("#textzone").addEventListener("keydown", function() {
     }
     turn++;
 });
+
+document.querySelector("#list_pkms").addEventListener("click", function() {
+    main = document.querySelector("main");
+    main.innerHTML = "";
+    main.style["flex-direction"] = "column";
+    for (let pkm of pkms) {
+        let pkm_elem = document.createElement("Button");
+        pkm_elem.innerHTML = `name: ${pkm.name} type: ${pkm.type[0]} pv: ${pkm.pv_max}
+        att: ${pkm.att} def: ${pkm.def} vit: ${pkm.vit} spe: ${pkm.spe} <img src=${pkm.img} alt=${pkm.img}>`;
+        main.appendChild(pkm_elem);
+    }
+});
