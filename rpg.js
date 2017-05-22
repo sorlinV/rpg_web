@@ -69,7 +69,7 @@ function action(attaquant, attack) {
     }
     aff_lifebar(enemy);
     return attaquant;
-};
+}
 
 function get_clone(clone) {
     let out = {};
@@ -1134,7 +1134,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Pikachu",
-    img: "img/pkm/Pikachu,.png",
+    img: "img/pkm/Pikachu.png",
     type: ["electrik"],
     pv_max: 35,
     pv: 35,
@@ -1151,7 +1151,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Raichu",
-    img: "img/pkm/Raichu,.png",
+    img: "img/pkm/Raichu.png",
     type: ["electrik"],
     pv_max: 60,
     pv: 60,
@@ -1168,7 +1168,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Sabelette",
-    img: "img/pkm/Sabelette,.png",
+    img: "img/pkm/Sabelette.png",
     type: ["sol"],
     pv_max: 50,
     pv: 50,
@@ -1185,7 +1185,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Sablaireau",
-    img: "img/pkm/Sablaireau,.png",
+    img: "img/pkm/Sablaireau.png",
     type: ["sol"],
     pv_max: 75,
     pv: 75,
@@ -1202,7 +1202,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Nidoran_F",
-    img: "img/pkm/Nidoran_F,.png",
+    img: "img/pkm/Nidoran_F.png",
     type: ["poison"],
     pv_max: 55,
     pv: 55,
@@ -1219,7 +1219,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Nidorina",
-    img: "img/pkm/Nidorina,.png",
+    img: "img/pkm/Nidorina.png",
     type: ["poison"],
     pv_max: 70,
     pv: 70,
@@ -1236,7 +1236,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Nidoqueen",
-    img: "img/pkm/Nidoqueen,.png",
+    img: "img/pkm/Nidoqueen.png",
     type: ["poison", "sol"],
     pv_max: 90,
     pv: 90,
@@ -1253,7 +1253,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Nidoran_M",
-    img: "img/pkm/Nidoran_M,.png",
+    img: "img/pkm/Nidoran_M.png",
     type: ["poison"],
     pv_max: 46,
     pv: 46,
@@ -1270,7 +1270,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Nidorino",
-    img: "img/pkm/Nidorino,.png",
+    img: "img/pkm/Nidorino.png",
     type: ["poison"],
     pv_max: 61,
     pv: 61,
@@ -1287,7 +1287,7 @@ let pkms = [{
     enemy: {}
 }, {
     name: "Nidoking",
-    img: "img/pkm/Nidoking,.png",
+    img: "img/pkm/Nidoking.png",
     type: ["poison", "sol"],
     pv_max: 81,
     pv: 81,
@@ -1575,11 +1575,317 @@ let pkms = [{
     },
     enemy: {}
 }, {
+    name: "Taupiqueur",
+    img: "img/pkm/Taupiqueur.png",
+    type: ["sol"],
+    pv_max: 10,
+    pv: 10,
+    att: 55,
+    def: 25,
+    vit: 95,
+    spe: 45,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Triopikeur",
+    img: "img/pkm/Triopikeur.png",
+    type: ["sol"],
+    pv_max: 35,
+    pv: 35,
+    att: 80,
+    def: 50,
+    vit: 120,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Miaouss",
+    img: "img/pkm/Miaouss.png",
+    type: ["normal"],
+    pv_max: 40,
+    pv: 40,
+    att: 45,
+    def: 35,
+    vit: 90,
+    spe: 40,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Persian",
+    img: "img/pkm/Persian.png",
+    type: ["normal"],
+    pv_max: 65,
+    pv: 65,
+    att: 70,
+    def: 60,
+    vit: 115,
+    spe: 65,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Psykokwak",
+    img: "img/pkm/Psykokwak.png",
+    type: ["eau"],
+    pv_max: 50,
+    pv: 52,
+    att: 48,
+    def: 48,
+    vit: 55,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Akwakwak",
+    img: "img/pkm/Akwakwak.png",
+    type: ["eau"],
+    pv_max: 80,
+    pv: 80,
+    att: 82,
+    def: 78,
+    vit: 85,
+    spe: 80,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Férosinge",
+    img: "img/pkm/Férosinge.png",
+    type: ["combat"],
+    pv_max: 40,
+    pv: 40,
+    att: 80,
+    def: 35,
+    vit: 70,
+    spe: 35,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Colossinge",
+    img: "img/pkm/Colossinge.png",
+    type: ["combat"],
+    pv_max: 65,
+    pv: 65,
+    att: 105,
+    def: 60,
+    vit: 95,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Caninos",
+    img: "img/pkm/Caninos.png",
+    type: ["feu"],
+    pv_max: 55,
+    pv: 55,
+    att: 70,
+    def: 45,
+    vit: 60,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Arcanin",
+    img: "img/pkm/Arcanin.png",
+    type: ["feu"],
+    pv_max: 90,
+    pv: 90,
+    att: 110,
+    def: 80,
+    vit: 95,
+    spe: 80,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ptitard",
+    img: "img/pkm/Ptitard.png",
+    type: ["eau"],
+    pv_max: 40,
+    pv: 40,
+    att: 50,
+    def: 40,
+    vit: 90,
+    spe: 40,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tétarte",
+    img: "img/pkm/Tétarte.png",
+    type: ["eau"],
+    pv_max: 65,
+    pv: 65,
+    att: 65,
+    def: 65,
+    vit: 90,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tartard",
+    img: "img/pkm/Tartard.png",
+    type: ["eau", "combat"],
+    pv_max: 90,
+    pv: 90,
+    att: 85,
+    def: 95,
+    vit: 70,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Abra",
+    img: "img/pkm/Abra.png",
+    type: ["psy"],
+    pv_max: 25,
+    pv: 25,
+    att: 20,
+    def: 15,
+    vit: 90,
+    spe: 105,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Kadabra",
+    img: "img/pkm/Kadabra.png",
+    type: ["psy"],
+    pv_max: 40,
+    pv: 40,
+    att: 35,
+    def: 30,
+    vit: 105,
+    spe: 120,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Alakazam",
+    img: "img/pkm/Alakazam.png",
+    type: ["psy"],
+    pv_max: 55,
+    pv: 55,
+    att: 50,
+    def: 45,
+    vit: 120,
+    spe: 135,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Machoc",
+    img: "img/pkm/Machoc.png",
+    type: ["combat"],
+    pv_max: 70,
+    pv: 70,
+    att: 80,
+    def: 50,
+    vit: 35,
+    spe: 35,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Machopeur",
+    img: "img/pkm/Machopeur.png",
+    type: ["combat"],
+    pv_max: 80,
+    pv: 80,
+    att: 100,
+    def: 70,
+    vit: 45,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
     name: "Mackogneur",
     img: "img/pkm/Mackogneur.png",
-    type: ["combat"], //90 - 130 - 80 - 55 - 65
-    pv: 90,
+    type: ["combat"],
     pv_max: 90,
+    pv: 90,
     att: 130,
     def: 80,
     vit: 55,
@@ -1592,20 +1898,1380 @@ let pkms = [{
     },
     enemy: {}
 }, {
-    name: "Arcanin",
-    img: "img/pkm/Arcanin.png",
-    type: ["feu"], //90 - 110 - 80 - 95 - 80
-    pv: 90,
-    pv_max: 90,
+    name: "Chétiflor",
+    img: "img/pkm/Chétiflor.png",
+    type: ["plante", "poison"],
+    pv_max: 50,
+    pv: 50,
+    att: 75,
+    def: 35,
+    vit: 40,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Boustiflor",
+    img: "img/pkm/Boustiflor.png",
+    type: ["plante", "poison"],
+    pv_max: 65,
+    pv: 65,
+    att: 90,
+    def: 50,
+    vit: 55,
+    spe: 85,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Empiflor",
+    img: "img/pkm/Empiflor.png",
+    type: ["plante", "poison"],
+    pv_max: 80,
+    pv: 80,
+    att: 105,
+    def: 65,
+    vit: 70,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tentacool",
+    img: "img/pkm/Tentacool.png",
+    type: ["eau", "poison"],
+    pv_max: 40,
+    pv: 40,
+    att: 40,
+    def: 35,
+    vit: 70,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tentacruel",
+    img: "img/pkm/Tentacruel.png",
+    type: ["eau", "poison"],
+    pv_max: 80,
+    pv: 80,
+    att: 70,
+    def: 65,
+    vit: 100,
+    spe: 120,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Racaillou",
+    img: "img/pkm/Racaillou.png",
+    type: ["roche", "sol"],
+    pv_max: 40,
+    pv: 40,
+    att: 80,
+    def: 100,
+    vit: 20,
+    spe: 30,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Gravalanch",
+    img: "img/pkm/Gravalanch.png",
+    type: ["roche", "sol"],
+    pv_max: 55,
+    pv: 55,
+    att: 95,
+    def: 115,
+    vit: 35,
+    spe: 45,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Grolem",
+    img: "img/pkm/Grolem.png",
+    type: ["roche", "sol"],
+    pv_max: 80,
+    pv: 80,
     att: 110,
-    def: 80,
-    vit: 95,
+    def: 130,
+    vit: 45,
+    spe: 55,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ponyta",
+    img: "img/pkm/Ponyta.png",
+    type: ["roche", "sol"],
+    pv_max: 80,
+    pv: 80,
+    att: 110,
+    def: 130,
+    vit: 45,
+    spe: 55,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Galopa",
+    img: "img/pkm/Galopa.png",
+    type: ["feu"],
+    pv_max: 65,
+    pv: 65,
+    att: 100,
+    def: 70,
+    vit: 105,
     spe: 80,
     attacks: {
-        Deflagration: get_clone(attacks.Deflagration),
-        Boul_armure: get_clone(attacks.Boul_armure),
-        Jet_de_sable: get_clone(attacks.Jet_de_sable),
-        E_coque: get_clone(attacks.E_coque)
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ramoloss",
+    img: "img/pkm/Ramoloss.png",
+    type: ["eau", "psy"],
+    pv_max: 90,
+    pv: 90,
+    att: 65,
+    def: 65,
+    vit: 15,
+    spe: 40,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Flagadoss",
+    img: "img/pkm/Flagadoss.png",
+    type: ["eau", "psy"],
+    pv_max: 95,
+    pv: 95,
+    att: 75,
+    def: 110,
+    vit: 30,
+    spe: 80,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Magneti",
+    img: "img/pkm/Magneti.png",
+    type: ["electrik"],
+    pv_max: 25,
+    pv: 25,
+    att: 35,
+    def: 70,
+    vit: 45,
+    spe: 95,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Magneton",
+    img: "img/pkm/Magneton.png",
+    type: ["electrik"],
+    pv_max: 50,
+    pv: 50,
+    att: 60,
+    def: 95,
+    vit: 70,
+    spe: 120,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Canar_Poireau",
+    img: "img/pkm/Canarticho.png",
+    type: ["normal", "vol"],
+    pv_max: 52,
+    pv: 52,
+    att: 65,
+    def: 55,
+    vit: 60,
+    spe: 58,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Dodrio",
+    img: "img/pkm/Dodrio.png",
+    type: ["normal", "vol"],
+    pv_max: 60,
+    pv: 60,
+    att: 110,
+    def: 70,
+    vit: 100,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Otaria",
+    img: "img/pkm/Otaria.png",
+    type: ["eau"],
+    pv_max: 65,
+    pv: 65,
+    att: 45,
+    def: 55,
+    vit: 45,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Lamantine",
+    img: "img/pkm/Lamantine.png",
+    type: ["eau", "glace"],
+    pv_max: 90,
+    pv: 90,
+    att: 70,
+    def: 80,
+    vit: 70,
+    spe: 95,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tadmorv",
+    img: "img/pkm/Tadmorv.png",
+    type: ["poison"],
+    pv_max: 80,
+    pv: 80,
+    att: 80,
+    def: 50,
+    vit: 25,
+    spe: 40,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Grotadmorv",
+    img: "img/pkm/Grotadmorv.png",
+    type: ["poison"],
+    pv_max: 105,
+    pv: 105,
+    att: 105,
+    def: 75,
+    vit: 50,
+    spe: 65,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Kokiyas",
+    img: "img/pkm/Kokiyas.png",
+    type: ["eau"],
+    pv_max: 30,
+    pv: 30,
+    att: 65,
+    def: 100,
+    vit: 40,
+    spe: 45,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Crustabri",
+    img: "img/pkm/Crustabri.png",
+    type: ["eau", "glace"],
+    pv_max: 50,
+    pv: 50,
+    att: 95,
+    def: 180,
+    vit: 70,
+    spe: 85,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Fantominus",
+    img: "img/pkm/Fantominus.png",
+    type: ["spectre", "poison"],
+    pv_max: 30,
+    pv: 30,
+    att: 35,
+    def: 30,
+    vit: 80,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Spectrum",
+    img: "img/pkm/Spectrum.png",
+    type: ["spectre", "poison"],
+    pv_max: 45,
+    pv: 45,
+    att: 50,
+    def: 45,
+    vit: 95,
+    spe: 115,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ectoplasma",
+    img: "img/pkm/Ectoplasma.png",
+    type: ["spectre", "poison"],
+    pv_max: 60,
+    pv: 60,
+    att: 65,
+    def: 60,
+    vit: 110,
+    spe: 130,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Onix",
+    img: "img/pkm/Onix.png",
+    type: ["roche", "sol"],
+    pv_max: 35,
+    pv: 35,
+    att: 45,
+    def: 160,
+    vit: 70,
+    spe: 30,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Soparifik",
+    img: "img/pkm/Soparifik.png",
+    type: ["psy"],
+    pv_max: 60,
+    pv: 60,
+    att: 48,
+    def: 45,
+    vit: 42,
+    spe: 90,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Hypnomade",
+    img: "img/pkm/Hypnomade.png",
+    type: ["psy"],
+    pv_max: 85,
+    pv: 85,
+    att: 73,
+    def: 70,
+    vit: 67,
+    spe: 115,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Krabby",
+    img: "img/pkm/Krabby.png",
+    type: ["eau"],
+    pv_max: 30,
+    pv: 30,
+    att: 105,
+    def: 90,
+    vit: 50,
+    spe: 25,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Krabboss",
+    img: "img/pkm/Krabboss.png",
+    type: ["eau"],
+    pv_max: 55,
+    pv: 55,
+    att: 130,
+    def: 115,
+    vit: 75,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Voltorbe",
+    img: "img/pkm/Voltorbe.png",
+    type: ["electrik"],
+    pv_max: 40,
+    pv: 40,
+    att: 30,
+    def: 50,
+    vit: 100,
+    spe: 55,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Électrode",
+    img: "img/pkm/Électrode.png",
+    type: ["electrik"],
+    pv_max: 60,
+    pv: 60,
+    att: 50,
+    def: 70,
+    vit: 140,
+    spe: 80,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Noeunoeuf",
+    img: "img/pkm/Noeunoeuf.png",
+    type: ["plante", "psy"],
+    pv_max: 60,
+    pv: 60,
+    att: 40,
+    def: 80,
+    vit: 40,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Noadkoko",
+    img: "img/pkm/Noadkoko.png",
+    type: ["plante", "psy"],
+    pv_max: 95,
+    pv: 95,
+    att: 95,
+    def: 85,
+    vit: 55,
+    spe: 125,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Osselait",
+    img: "img/pkm/Osselait.png",
+    type: ["sol"],
+    pv_max: 50,
+    pv: 50,
+    att: 50,
+    def: 95,
+    vit: 35,
+    spe: 40,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ossatueur",
+    img: "img/pkm/Ossatueur.png",
+    type: ["sol"],
+    pv_max: 60,
+    pv: 60,
+    att: 80,
+    def: 110,
+    vit: 45,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Kicklee",
+    img: "img/pkm/Kicklee.png",
+    type: ["combat"],
+    pv_max: 50,
+    pv: 50,
+    att: 120,
+    def: 53,
+    vit: 87,
+    spe: 35,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tygnon",
+    img: "img/pkm/Tygnon.png",
+    type: ["combat"],
+    pv_max: 50,
+    pv: 50,
+    att: 105,
+    def: 79,
+    vit: 76,
+    spe: 35,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Excelangue",
+    img: "img/pkm/Excelangue.png",
+    type: ["normal"],
+    pv_max: 90,
+    pv: 90,
+    att: 55,
+    def: 75,
+    vit: 30,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Smogo",
+    img: "img/pkm/Smogo.png",
+    type: ["poison"],
+    pv_max: 40,
+    pv: 40,
+    att: 65,
+    def: 95,
+    vit: 35,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Smogogo",
+    img: "img/pkm/Smogogo.png",
+    type: ["poison"],
+    pv_max: 65,
+    pv: 65,
+    att: 90,
+    def: 120,
+    vit: 60,
+    spe: 85,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Rhinocorne",
+    img: "img/pkm/Rhinocorne.png",
+    type: ["sol", "roche"],
+    pv_max: 80,
+    pv: 80,
+    att: 85,
+    def: 95,
+    vit: 25,
+    spe: 30,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Rhinoféros",
+    img: "img/pkm/Rhinoféros.png",
+    type: ["sol", "roche"],
+    pv_max: 105,
+    pv: 105,
+    att: 130,
+    def: 120,
+    vit: 40,
+    spe: 45,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Leveinard",
+    img: "img/pkm/Leveinard.png",
+    type: ["normal"],
+    pv_max: 250,
+    pv: 250,
+    att: 5,
+    def: 5,
+    vit: 50,
+    spe: 105,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Saquedeneu",
+    img: "img/pkm/Saquedeneu.png",
+    type: ["plante"],
+    pv_max: 65,
+    pv: 65,
+    att: 55,
+    def: 115,
+    vit: 60,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Kangourex",
+    img: "img/pkm/Kangourex.png",
+    type: ["normal"],
+    pv_max: 105,
+    pv: 105,
+    att: 95,
+    def: 80,
+    vit: 90,
+    spe: 40,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Hypotrempe",
+    img: "img/pkm/Hypotrempe.png",
+    type: ["eau"],
+    pv_max: 30,
+    pv: 30,
+    att: 40,
+    def: 70,
+    vit: 60,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Hypocéan",
+    img: "img/pkm/Hypocéan.png",
+    type: ["eau"],
+    pv_max: 55,
+    pv: 55,
+    att: 65,
+    def: 95,
+    vit: 85,
+    spe: 95,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Poissirène",
+    img: "img/pkm/Hypocéan.png",
+    type: ["eau"],
+    pv_max: 45,
+    pv: 45,
+    att: 67,
+    def: 60,
+    vit: 63,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Poissoroy",
+    img: "img/pkm/Poissoroy.png",
+    type: ["eau"],
+    pv_max: 80,
+    pv: 80,
+    att: 92,
+    def: 65,
+    vit: 68,
+    spe: 80,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Stari",
+    img: "img/pkm/Stari.png",
+    type: ["eau"],
+    pv_max: 30,
+    pv: 30,
+    att: 45,
+    def: 55,
+    vit: 85,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Staross",
+    img: "img/pkm/Staross.png",
+    type: ["eau", "psy"],
+    pv_max: 60,
+    pv: 60,
+    att: 75,
+    def: 85,
+    vit: 115,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "M.Mime",
+    img: "img/pkm/M.Mime.png",
+    type: ["psy"],
+    pv_max: 40,
+    pv: 40,
+    att: 45,
+    def: 65,
+    vit: 90,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Insécateur",
+    img: "img/pkm/Insécateur.png",
+    type: ["insecte", "vol"],
+    pv_max: 70,
+    pv: 70,
+    att: 110,
+    def: 80,
+    vit: 105,
+    spe: 55,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Lippoutou",
+    img: "img/pkm/Lippoutou.png",
+    type: ["glace", "psy"],
+    pv_max: 65,
+    pv: 65,
+    att: 50,
+    def: 35,
+    vit: 95,
+    spe: 95,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Élektek",
+    img: "img/pkm/Élektek.png",
+    type: ["eletrik"],
+    pv_max: 65,
+    pv: 65,
+    att: 50,
+    def: 35,
+    vit: 95,
+    spe: 95,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Magmar",
+    img: "img/pkm/Magmar.png",
+    type: ["feu"],
+    pv_max: 65,
+    pv: 65,
+    att: 95,
+    def: 57,
+    vit: 93,
+    spe: 85,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Scarabrute",
+    img: "img/pkm/Scarabrute.png",
+    type: ["insecte"],
+    pv_max: 65,
+    pv: 65,
+    att: 125,
+    def: 100,
+    vit: 85,
+    spe: 55,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Tauros",
+    img: "img/pkm/Tauros.png",
+    type: ["normal"],
+    pv_max: 75,
+    pv: 75,
+    att: 100,
+    def: 95,
+    vit: 110,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Magicarpe",
+    img: "img/pkm/Magicarpe.png",
+    type: ["eau"],
+    pv_max: 20,
+    pv: 20,
+    att: 10,
+    def: 55,
+    vit: 80,
+    spe: 20,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Léviator",
+    img: "img/pkm/Léviator.png",
+    type: ["eau", "vol"],
+    pv_max: 95,
+    pv: 95,
+    att: 125,
+    def: 79,
+    vit: 81,
+    spe: 100,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Lokhlass",
+    img: "img/pkm/Lokhlass.png",
+    type: ["eau", "glace"],
+    pv_max: 130,
+    pv: 130,
+    att: 85,
+    def: 80,
+    vit: 60,
+    spe: 95,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Métamorph",
+    img: "img/pkm/Métamorph.png",
+    type: ["normal"],
+    pv_max: 48,
+    pv: 48,
+    att: 48,
+    def: 48,
+    vit: 48,
+    spe: 48,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Évoli",
+    img: "img/pkm/Évoli.png",
+    type: ["normal"],
+    pv_max: 55,
+    pv: 55,
+    att: 55,
+    def: 50,
+    vit: 55,
+    spe: 65,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Aquali",
+    img: "img/pkm/Aquali.png",
+    type: ["eau"],
+    pv_max: 130,
+    pv: 130,
+    att: 65,
+    def: 60,
+    vit: 65,
+    spe: 110,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Voltali",
+    img: "img/pkm/Voltali.png",
+    type: ["electrik"],
+    pv_max: 130,
+    pv: 130,
+    att: 65,
+    def: 60,
+    vit: 65,
+    spe: 110,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Pyroli",
+    img: "img/pkm/Pyroli.png",
+    type: ["feu"],
+    pv_max: 65,
+    pv: 65,
+    att: 130,
+    def: 60,
+    vit: 65,
+    spe: 110,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Porygon",
+    img: "img/pkm/Porygon.png",
+    type: ["normal"],
+    pv_max: 65,
+    pv: 65,
+    att: 60,
+    def: 70,
+    vit: 40,
+    spe: 75,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Amonita",
+    img: "img/pkm/Amonita.png",
+    type: ["roche", "eau"],
+    pv_max: 35,
+    pv: 35,
+    att: 40,
+    def: 100,
+    vit: 35,
+    spe: 90,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Amonistar",
+    img: "img/pkm/Amonistar.png",
+    type: ["roche", "eau"],
+    pv_max: 70,
+    pv: 70,
+    att: 60,
+    def: 125,
+    vit: 55,
+    spe: 115,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Kabuto",
+    img: "img/pkm/Kabuto.png",
+    type: ["roche", "eau"],
+    pv_max: 30,
+    pv: 30,
+    att: 80,
+    def: 90,
+    vit: 55,
+    spe: 45,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Kabutops",
+    img: "img/pkm/Kabutops.png",
+    type: ["poison", "eau"],
+    pv_max: 60,
+    pv: 60,
+    att: 115,
+    def: 105,
+    vit: 80,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ptéra",
+    img: "img/pkm/Ptéra.png",
+    type: ["roche", "vol"],
+    pv_max: 80,
+    pv: 80,
+    att: 105,
+    def: 65,
+    vit: 130,
+    spe: 60,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Ronflex",
+    img: "img/pkm/Ronflex.png",
+    type: ["normal"],
+    pv_max: 160,
+    pv: 160,
+    att: 110,
+    def: 65,
+    vit: 30,
+    spe: 65,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Artikodin",
+    img: "img/pkm/Artikodin.png",
+    type: ["glace", "vol"],
+    pv_max: 90,
+    pv: 90,
+    att: 85,
+    def: 100,
+    vit: 85,
+    spe: 125,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Électhor",
+    img: "img/pkm/Électhor.png",
+    type: ["electrik", "vol"],
+    pv_max: 90,
+    pv: 90,
+    att: 90,
+    def: 85,
+    vit: 100,
+    spe: 125,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Sulfura",
+    img: "img/pkm/Sulfura.png",
+    type: ["feu", "vol"],
+    pv_max: 90,
+    pv: 90,
+    att: 100,
+    def: 90,
+    vit: 90,
+    spe: 125,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Minidraco",
+    img: "img/pkm/Minidraco.png",
+    type: ["dragon"],
+    pv_max: 41,
+    pv: 41,
+    att: 64,
+    def: 45,
+    vit: 50,
+    spe: 50,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Draco",
+    img: "img/pkm/Draco.png",
+    type: ["dragon"],
+    pv_max: 61,
+    pv: 61,
+    att: 84,
+    def: 65,
+    vit: 70,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Dracolosse",
+    img: "img/pkm/Dracolosse.png",
+    type: ["dragon", "vol"],
+    pv_max: 61,
+    pv: 61,
+    att: 84,
+    def: 65,
+    vit: 70,
+    spe: 70,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
+    },
+    enemy: {}
+}, {
+    name: "Mewtwo",
+    img: "img/pkm/Mewtwo.png",
+    type: ["psy"],
+    pv_max: 106,
+    pv: 106,
+    att: 110,
+    def: 90,
+    vit: 130,
+    spe: 154,
+    attacks: {
+        Charge: get_clone(attacks.Charge),
+        Amnesie: get_clone(attacks.Amnesie),
+        Choc_mental: get_clone(attacks.Choc_mental),
+        Blizzard: get_clone(attacks.Blizzard)
     },
     enemy: {}
 }, {
