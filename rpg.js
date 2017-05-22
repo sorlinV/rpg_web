@@ -2340,8 +2340,8 @@ let pkms = [{
     },
     enemy: {}
 }, {
-    name: "Soparifik",
-    img: "img/pkm/Soparifik.png",
+    name: "Soporifik",
+    img: "img/pkm/Soporifik.png",
     type: ["psy"],
     pv_max: 60,
     pv: 60,
@@ -3501,14 +3501,43 @@ document.querySelector("#textzone").addEventListener("keydown", function() {
     turn++;
 });
 
+function make_get_player(pkm) {
+    return function() {
+        player = pkm;
+        if (enemy !== {}) {
+            player.enemy = enemy;
+        }
+        document.querySelector("left").remove;
+    };
+}
+
+function make_get_enemy(pkm) {
+    return function() {
+        enemy = pkm;
+        if (player !== {}) {
+            enemy.enemy = player;
+        }
+        document.querySelector("left").remove;
+    };
+}
+
 document.querySelector("#list_pkms").addEventListener("click", function() {
+    player = {};
+    enemy = {};
     main = document.querySelector("main");
-    main.innerHTML = "";
-    main.style["flex-direction"] = "column";
+    main.innerHTML = `<div id="left"></div><div id="right"></div>`;
     for (let pkm of pkms) {
         let pkm_elem = document.createElement("Button");
         pkm_elem.innerHTML = `name: ${pkm.name} type: ${pkm.type[0]} pv: ${pkm.pv_max}
         att: ${pkm.att} def: ${pkm.def} vit: ${pkm.vit} spe: ${pkm.spe} <img src=${pkm.img} alt=${pkm.img}>`;
-        main.appendChild(pkm_elem);
+        pkm_elem.addEventListener("click", make_get_player(pkm));
+        document.querySelector("#left").appendChild(pkm_elem);
+    }
+    for (let pkm of pkms) {
+        let pkm_elem = document.createElement("Button");
+        pkm_elem.innerHTML = `name: ${pkm.name} type: ${pkm.type[0]} pv: ${pkm.pv_max}
+        att: ${pkm.att} def: ${pkm.def} vit: ${pkm.vit} spe: ${pkm.spe} <img src=${pkm.img} alt=${pkm.img}>`;
+        pkm_elem.addEventListener("click", make_get_enemy(pkm));
+        document.querySelector("#right").appendChild(pkm_elem);
     }
 });
