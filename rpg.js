@@ -1103,10 +1103,316 @@ let attacks = {
         type_att: "pv-",
         action: action
     },
-
-
-
-
+    Rafale_Psy: {
+        name: "Rafale_Psy",
+        type: "psy",
+        type_imu: undefined,
+        pp: 20,
+        pui: 65,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Reflet: {
+        name: "Reflet",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 15,
+        pui: 10,
+        pre: 1,
+        type_att: "pre-",
+        action: action
+    },
+    Repli: {
+        name: "Repli",
+        type: "eau",
+        type_imu: undefined,
+        pp: 40,
+        pui: 10,
+        pre: 1,
+        type_att: "boost+def",
+        action: action
+    },
+    Rugissement: {
+        name: "Rugissement",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 10,
+        pre: 1,
+        type_att: "boost-att",
+        action: action
+    },
+    Secretion: {
+        name: "Secretion",
+        type: "insecte",
+        type_imu: undefined,
+        pp: 40,
+        pui: 10,
+        pre: 1,
+        type_att: "boost-vit",
+        action: action
+    },
+    Seisme: {
+        name: "Seisme",
+        type: "sol",
+        type_imu: "vol",
+        pp: 10,
+        pui: 100,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Soin: {
+        name: "Soin",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 40,
+        pre: 1,
+        type_att: "pv+",
+        action: action
+    },
+    Sonicboom: {
+        name: "Sonicboom",
+        type: "normal",
+        type_imu: undefined,
+        pp: 20,
+        pui: 20,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Souplesse: {
+        name: "Souplesse",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 80,
+        pre: 0.75,
+        type_att: "pv-",
+        action: action
+    },
+    Surf: {
+        name: "Surf",
+        type: "eau",
+        type_imu: undefined,
+        pp: 15,
+        pui: 95,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Telekinesie: {
+        name: "Telekinesie",
+        type: "psy",
+        type_imu: undefined,
+        pp: 15,
+        pui: 10,
+        pre: 0.75,
+        type_att: "pre-",
+        action: action
+    },
+    Teleport: {
+        name: "Teleport",
+        type: "psy",
+        type_imu: undefined,
+        pp: 20,
+        pui: 10,
+        pre: 1,
+        type_att: "morph",
+        action: action
+    },
+    Tenebre: {
+        name: "Tenebre",
+        type: "spectre",
+        type_imu: "normal",
+        pp: 15,
+        pui: 60,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Tonnerre: {
+        name: "Tonnerre",
+        type: "electrik",
+        type_imu: undefined,
+        pp: 15,
+        pui: 95,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Torgnoles: {
+        name: "Torgnoles",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 15 * getRandomInt(1, 6),
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Tornade: {
+        name: "Tornade",
+        type: "vol",
+        type_imu: undefined,
+        pp: 35,
+        pui: 40,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Tranche: {
+        name: "Tranche",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 70,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Tranch_Herbe: {
+        name: "Tranch_Herbe",
+        type: "plante",
+        type_imu: undefined,
+        pp: 25,
+        pui: 55,
+        pre: 0.95,
+        type_att: "pv-",
+        action: action
+    },
+    Trempette: {
+        name: "Trempette",
+        type: "eau",
+        type_imu: undefined,
+        pp: 40,
+        pui: 0,
+        pre: 1,
+        type_att: "nothing",
+        action: action
+    },
+    Triplattaque: {
+        name: "Triplattaque",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 80,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Tunnel: {
+        name: "Tunnel",
+        type: "sol",
+        type_imu: "vol",
+        pp: 10,
+        pui: 100,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Ultimapoing: {
+        name: "Ultimapoing",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 80,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Ultimawhashi: {
+        name: "Ultimawhashi",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 5,
+        pui: 120,
+        pre: 0.75,
+        type_att: "pv-",
+        action: action
+    },
+    Ultralaser: {
+        name: "Ultralaser",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 5,
+        pui: 120,
+        pre: 0.9,
+        type_att: "pv-",
+        action: action
+    },
+    Uppercut: {
+        name: "Uppercut",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 70,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Vague_Psy: {
+        name: "Vague_Psy",
+        type: "psy",
+        type_imu: undefined,
+        pp: 15,
+        pui: 70,
+        pre: 0.8,
+        type_att: "pv-",
+        action: action
+    },
+    Vampigraine: {
+        name: "Vampigraine",
+        type: "plante",
+        type_imu: undefined,
+        pp: 10,
+        pui: 30,
+        pre: 0.9,
+        type_att: "pv-",
+        action: action
+    },
+    Vampirisme: {
+        name: "Vampirisme",
+        type: "insecte",
+        type_imu: undefined,
+        pp: 15,
+        pui: 20,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Vive_Attaque: {
+        name: "Vive_Attaque",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 30,
+        pui: 40,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Vol: {
+        name: "Vol",
+        type: "vol",
+        type_imu: undefined,
+        pp: 15,
+        pui: 70,
+        pre: 0.95,
+        type_att: "pv-",
+        action: action
+    },
+    Yoga: {
+        name: "Yoga",
+        type: "psy",
+        type_imu: undefined,
+        pp: 40,
+        pui: 10,
+        pre: 1,
+        type_att: "boost+att",
+        action: action
+    },
 }
 
 function getRandomkeys(obj) {
