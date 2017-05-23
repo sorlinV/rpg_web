@@ -39,6 +39,19 @@ function do_action(attaquant, attack) {
             attaquant.enemy.attacks[att].pre -= attaquant.enemy.attacks[att].pre * (attaquant.attacks[attack.name].pui / 100);
         }
     }
+    if (attaquant.attacks[attack.name].type_att === "morph") {
+        attaquant.img = attaquant.enemy.img;
+        attaquant.attacks = get_clone(attaquant.enemy.attacks);
+        attaquant.type = attaquant.enemy.type;
+        let player_aff = document.createElement('img');
+        let enemy_aff = document.createElement('img');
+        player_aff.src = `${player.img}`;
+        enemy_aff.src = `${enemy.img}`;
+        document.querySelector("main").innerHTML = "";
+        document.querySelector("main").appendChild(player_aff);
+        document.querySelector("main").appendChild(enemy_aff);
+        aff_lifebar(enemy);
+    }
     return attaquant;
 }
 
@@ -710,6 +723,389 @@ let attacks = {
         type_att: "pv-",
         action: action
     },
+    Lance_Flamme: {
+        name: "Lance_Flamme",
+        type: "feu",
+        type_imu: undefined,
+        pp: 15,
+        pui: 95,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Lance_Soleil: {
+        name: "Lance_Soleil",
+        type: "plante",
+        type_imu: undefined,
+        pp: 10,
+        pui: 120,
+        pre: 0.7,
+        type_att: "pv-",
+        action: action
+    },
+    Laser_Glace: {
+        name: "Laser_Glace",
+        type: "glace",
+        type_imu: undefined,
+        pp: 10,
+        pui: 95,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Lechouille: {
+        name: "Lechouille",
+        type: "spectre",
+        type_imu: "normal",
+        pp: 30,
+        pui: 20,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Ligotage: {
+        name: "Ligotage",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 15,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    liliput: {
+        name: "liliput",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 10,
+        pre: 1,
+        type_att: "pre-",
+        action: action
+    },
+    Lutte: {
+        name: "Lutte",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 100000000,
+        pui: 100,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Mania: {
+        name: "Mania",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 90,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Massd_Os: {
+        name: "Massd_Os",
+        type: "sol",
+        type_imu: "vol",
+        pp: 20,
+        pui: 65,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Mawashi_Geri: {
+        name: "Mawashi_Geri",
+        type: "combat",
+        type_imu: "spectre",
+        pp: 15,
+        pui: 60,
+        pre: 0.8,
+        type_att: "pv-",
+        action: action
+    },
+    Mega_sangsue: {
+        name: "Mega_sangsue",
+        type: "plante",
+        type_imu: undefined,
+        pp: 10,
+        pui: 40,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Meteores: {
+        name: "Meteores",
+        type: "normal",
+        type_imu: undefined,
+        pp: 20,
+        pui: 60,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Metronome: {
+        name: "Metronome",
+        type: "normal",
+        type_imu: undefined,
+        pp: 10,
+        pui: 20,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Mimique: {
+        name: "Mimique",
+        type: "vol",
+        type_imu: undefined,
+        pp: 20,
+        pui: 20,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Mimi_queue: {
+        name: "Mimi_queue",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 30,
+        pui: 10,
+        pre: 1,
+        type_att: "boost-def",
+        action: action
+    },
+    Morphing: {
+        name: "Morphing",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 1,
+        pre: 1,
+        type_att: "morph",
+        action: action
+    },
+    Morsure: {
+        name: "Morsure",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 25,
+        pui: 60,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Mur_lumiere: {
+        name: "Mur_lumiere",
+        type: "psy",
+        type_imu: undefined,
+        pp: 30,
+        pui: 10,
+        pre: 1,
+        type_att: "boost-att",
+        action: action
+    },
+    Onde_Boreale: {
+        name: "Onde_Boreale",
+        type: "glace",
+        type_imu: undefined,
+        pp: 20,
+        pui: 65,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Osmerang: {
+        name: "Osmerang",
+        type: "sol",
+        type_imu: "vol",
+        pp: 10,
+        pui: 50 * getRandomInt(1, 3),
+        pre: 0.9,
+        type_att: "pv-",
+        action: action
+    },
+    Picanon: {
+        name: "Picanon",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 15,
+        pui: 50 * getRandomInt(1, 5),
+        pre: 0.9,
+        type_att: "pv-",
+        action: action
+    },
+    Picpic: {
+        name: "Picpic",
+        type: "vol",
+        type_imu: undefined,
+        pp: 35,
+        pui: 35,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Pied_saute: {
+        name: "Pied_saute",
+        type: "combat",
+        type_imu: "spectre",
+        pp: 25,
+        pui: 70,
+        pre: 0.95,
+        type_att: "pv-",
+        action: action
+    },
+    Pied_Voltige: {
+        name: "Pied_Voltige",
+        type: "combat",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 85,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Pilonnage: {
+        name: "Pilonnage",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 20,
+        pui: 15,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Pince_Masse: {
+        name: "Pince_Masse",
+        type: "eau",
+        type_imu: undefined,
+        pp: 10,
+        pui: 90,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Pique: {
+        name: "Pique",
+        type: "vol",
+        type_imu: undefined,
+        pp: 5,
+        pui: 140,
+        pre: 0.9,
+        type_att: "pv-",
+        action: action
+    },
+    Pistolet_a_O: {
+        name: "Pistolet_a_O",
+        type: "eau",
+        type_imu: undefined,
+        pp: 20,
+        pui: 40,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Plaquage: {
+        name: "Plaquage",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 15,
+        pui: 85,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Plaquage: {
+        name: "Plaquage",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 15,
+        pui: 85,
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Poing_Comete: {
+        name: "Poing_Comete",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 15,
+        pui: 18 * getRandomInt(1, 6),
+        pre: 0.85,
+        type_att: "pv-",
+        action: action
+    },
+    Poing_De_Feu: {
+        name: "Poing_De_Feu",
+        type: "feu",
+        type_imu: undefined,
+        pp: 15,
+        pui: 75,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Poing_Karate: {
+        name: "Poing_Karate",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 25,
+        pui: 50,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Poing_Eclair: {
+        name: "Poing_Eclair",
+        type: "electrik",
+        type_imu: undefined,
+        pp: 15,
+        pui: 75,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Poinglace: {
+        name: "Poinglace",
+        type: "glace",
+        type_imu: undefined,
+        pp: 15,
+        pui: 75,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Protection: {
+        name: "Protection",
+        type: "psy",
+        type_imu: undefined,
+        pp: 20,
+        pui: 10,
+        pre: 1,
+        type_att: "boost-spe",
+        action: action
+    },
+    Psyko: {
+        name: "Psyko",
+        type: "psy",
+        type_imu: undefined,
+        pp: 10,
+        pui: 90,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+    Puissance: {
+        name: "Puissance",
+        type: "normal",
+        type_imu: "spectre",
+        pp: 10,
+        pui: 90,
+        pre: 1,
+        type_att: "pv-",
+        action: action
+    },
+
+
+
 
 }
 
@@ -2962,10 +3358,7 @@ let pkms = [{
     vit: 48,
     spe: 48,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Morphing: get_clone(attacks.Morphing)
     },
     enemy: {}
 }, {
@@ -3344,26 +3737,30 @@ text.textContent = `Le joueur envoie ${player.name} et l'adversaire envoie ${pla
 document.querySelector("#textzone").appendChild(text);
 aff_lifebar(enemy);
 
+function aff(player, enemy) {
+    turn = 2;
+    let player_aff = document.createElement('img');
+    let enemy_aff = document.createElement('img');
+    player_aff.src = `${player.img}`;
+    enemy_aff.src = `${enemy.img}`;
+    document.querySelector("main").innerHTML = "";
+    document.querySelector("#textzone").innerHTML = "";
+    document.querySelector("main").appendChild(player_aff);
+    document.querySelector("main").appendChild(enemy_aff);
+    let text = document.createElement("p");
+    text.textContent = `Le joueur envoie ${player.name} et l'adversaire envoie ${player.enemy.name}`;
+    document.querySelector("#textzone").appendChild(text);
+    aff_lifebar(enemy);
+}
+
 buttons = document.querySelectorAll(".combat");
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function() {
-        turn = 2;
-        document.querySelector("main").innerHTML = "";
-        document.querySelector("#textzone").innerHTML = "";
         player = getPokemon(pkms);
         enemy = getPokemon(pkms);
         player.enemy = enemy;
         enemy.enemy = player;
-        let player_aff = document.createElement('img');
-        let enemy_aff = document.createElement('img');
-        player_aff.src = `${player.img}`;
-        enemy_aff.src = `${enemy.img}`;
-        document.querySelector("main").appendChild(player_aff);
-        document.querySelector("main").appendChild(enemy_aff);
-        let text = document.createElement("p");
-        text.textContent = `Le joueur envoie ${player.name} et l'adversaire envoie ${player.enemy.name}`;
-        document.querySelector("#textzone").appendChild(text);
-        aff_lifebar(enemy);
+        aff(player, enemy);
     });
 }
 
@@ -3456,7 +3853,7 @@ document.querySelector("#textzone").addEventListener("click", function() {
     turn++;
 });
 
-document.querySelector("#textzone").addEventListener("keydown", function() {
+document.addEventListener("keydown", function() {
     document.querySelector("#textzone").innerHTML = "";
     aff_lifebar(enemy);
     if (player.pv > 0 && player.enemy.pv > 0 && turn % 4 === 0) {
@@ -3503,27 +3900,31 @@ document.querySelector("#textzone").addEventListener("keydown", function() {
 
 function make_get_player(pkm) {
     return function() {
-        player = pkm;
-        if (enemy !== {}) {
+        player = get_clone(pkm);
+        if (enemy !== null) {
             player.enemy = enemy;
+            enemy.enemy = player;
+            aff(player, enemy);
         }
-        document.querySelector("left").remove;
+        document.querySelector("#left").remove();
     };
 }
 
 function make_get_enemy(pkm) {
     return function() {
-        enemy = pkm;
-        if (player !== {}) {
+        enemy = get_clone(pkm);
+        if (player !== null) {
             enemy.enemy = player;
+            player.enemy = enemy;
+            aff(player, enemy);
         }
-        document.querySelector("left").remove;
+        document.querySelector("#right").remove();
     };
 }
 
 document.querySelector("#list_pkms").addEventListener("click", function() {
-    player = {};
-    enemy = {};
+    player = null;
+    enemy = null;
     main = document.querySelector("main");
     main.innerHTML = `<div id="left"></div><div id="right"></div>`;
     for (let pkm of pkms) {
