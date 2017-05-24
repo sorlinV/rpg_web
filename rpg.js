@@ -2591,10 +2591,10 @@ let pkms = [{
     vit: 40,
     spe: 70,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Fouet_Lianes: get_clone(attacks.Fouet_Lianes),
+        Croissance: get_clone(attacks.Croissance),
+        Acide: get_clone(attacks.Acide),
+        Tranch_Herbe: get_clone(attacks.Tranch_Herbe)
     },
     enemy: {}
 }, {
@@ -2608,10 +2608,10 @@ let pkms = [{
     vit: 55,
     spe: 85,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Fouet_Lianes: get_clone(attacks.Fouet_Lianes),
+        Croissance: get_clone(attacks.Croissance),
+        Acide: get_clone(attacks.Acide),
+        Tranch_Herbe: get_clone(attacks.Tranch_Herbe)
     },
     enemy: {}
 }, {
@@ -2625,10 +2625,10 @@ let pkms = [{
     vit: 70,
     spe: 100,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Fouet_Lianes: get_clone(attacks.Fouet_Lianes),
+        Croissance: get_clone(attacks.Croissance),
+        Acide: get_clone(attacks.Acide),
+        Tranch_Herbe: get_clone(attacks.Tranch_Herbe)
     },
     enemy: {}
 }, {
@@ -2642,10 +2642,10 @@ let pkms = [{
     vit: 70,
     spe: 100,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Dard_Venin: get_clone(attacks.Dard_Venin),
+        Acide: get_clone(attacks.Acide),
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Bulles_D_O: get_clone(attacks.Bulles_D_O)
     },
     enemy: {}
 }, {
@@ -2659,10 +2659,10 @@ let pkms = [{
     vit: 100,
     spe: 120,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Dard_Venin: get_clone(attacks.Dard_Venin),
+        Acide: get_clone(attacks.Acide),
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Bulles_D_O: get_clone(attacks.Bulles_D_O)
     },
     enemy: {}
 }, {
@@ -2676,10 +2676,9 @@ let pkms = [{
     vit: 20,
     spe: 30,
     attacks: {
+        Boul_armure: get_clone(attacks.Boul_armure),
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Jet_pierre: get_clone(attacks.Jet_pierre),
     },
     enemy: {}
 }, {
@@ -2693,10 +2692,10 @@ let pkms = [{
     vit: 35,
     spe: 45,
     attacks: {
+        Boul_armure: get_clone(attacks.Boul_armure),
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Jet_pierre: get_clone(attacks.Jet_pierre),
+        Seisme: get_clone(attacks.Seisme)
     },
     enemy: {}
 }, {
@@ -2710,10 +2709,10 @@ let pkms = [{
     vit: 45,
     spe: 55,
     attacks: {
+        Boul_armure: get_clone(attacks.Boul_armure),
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Jet_pierre: get_clone(attacks.Jet_pierre),
+        Seisme: get_clone(attacks.Seisme)
     },
     enemy: {}
 }, {
@@ -2728,9 +2727,9 @@ let pkms = [{
     spe: 55,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Flammeche: get_clone(attacks.Flammeche),
+        Hate: get_clone(attacks.Hate)
     },
     enemy: {}
 }, {
@@ -2745,9 +2744,9 @@ let pkms = [{
     spe: 80,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Rugissement: get_clone(attacks.Rugissement),
+        Flammeche: get_clone(attacks.Flammeche),
+        Deflagration: get_clone(attacks.Deflagration)
     },
     enemy: {}
 }, {
@@ -2762,9 +2761,9 @@ let pkms = [{
     spe: 40,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Psyko: get_clone(attacks.Psyko)
     },
     enemy: {}
 }, {
@@ -2779,9 +2778,9 @@ let pkms = [{
     spe: 80,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Psyko: get_clone(attacks.Psyko)
     },
     enemy: {}
 }, {
@@ -2796,9 +2795,8 @@ let pkms = [{
     spe: 95,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Eclair: get_clone(attacks.Eclair),
+        Meteores: get_clone(attacks.Meteores),
     },
     enemy: {}
 }, {
@@ -2813,13 +2811,13 @@ let pkms = [{
     spe: 120,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Eclair: get_clone(attacks.Eclair),
+        Meteores: get_clone(attacks.Meteores),
+        Tonnerre: get_clone(attacks.Tonnerre)
     },
     enemy: {}
 }, {
-    name: "Canar_Poireau",
+    name: "Canard_Poireau",
     img: "img/pkm/Canarticho.png",
     type: ["normal", "vol"],
     pv_max: 52,
@@ -2829,10 +2827,27 @@ let pkms = [{
     vit: 60,
     spe: 58,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Picpic: get_clone(attacks.Picpic),
+        Jet_de_sable: get_clone(attacks.Jet_de_sable),
+        Tranche: get_clone(attacks.Tranche),
+        Hate: get_clone(attacks.Hate)
+    },
+    enemy: {}
+}, {
+    name: "Doduo",
+    img: "img/pkm/Doduo.png",
+    type: ["normal", "vol"],
+    pv_max: 35,
+    pv: 35,
+    att: 85,
+    def: 45,
+    vit: 75,
+    spe: 35,
+    attacks: {
+        Picpic: get_clone(attacks.Picpic),
+        Furie: get_clone(attacks.Furie),
+        Triplattaque: get_clone(attacks.Triplattaque),
+        Bec_vrille: get_clone(attacks.Bec_vrille)
     },
     enemy: {}
 }, {
@@ -2846,10 +2861,10 @@ let pkms = [{
     vit: 100,
     spe: 60,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Picpic: get_clone(attacks.Picpic),
+        Furie: get_clone(attacks.Furie),
+        Triplattaque: get_clone(attacks.Triplattaque),
+        Bec_vrille: get_clone(attacks.Bec_vrille)
     },
     enemy: {}
 }, {
@@ -2863,10 +2878,10 @@ let pkms = [{
     vit: 45,
     spe: 70,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Coud_boule: get_clone(attacks.Coud_boule),
+        Rugissement: get_clone(attacks.Rugissement),
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Laser_Glace: get_clone(attacks.Laser_Glace)
     },
     enemy: {}
 }, {
@@ -2880,10 +2895,10 @@ let pkms = [{
     vit: 70,
     spe: 95,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Ecras_face: get_clone(attacks.Ecras_face),
+        Armure: get_clone(attacks.Armure),
+        Detritus: get_clone(attacks.Detritus),
+        liliput: get_clone(attacks.liliput)
     },
     enemy: {}
 }, {
@@ -2897,10 +2912,10 @@ let pkms = [{
     vit: 25,
     spe: 40,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Ecras_face: get_clone(attacks.Ecras_face),
+        Armure: get_clone(attacks.Armure),
+        Detritus: get_clone(attacks.Detritus),
+        Acidarmure: get_clone(attacks.Acidarmure)
     },
     enemy: {}
 }, {
@@ -2914,10 +2929,10 @@ let pkms = [{
     vit: 50,
     spe: 65,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Ecras_face: get_clone(attacks.Ecras_face),
+        Armure: get_clone(attacks.Armure),
+        Detritus: get_clone(attacks.Detritus),
+        Acidarmure: get_clone(attacks.Acidarmure)
     },
     enemy: {}
 }, {
@@ -2932,9 +2947,9 @@ let pkms = [{
     spe: 45,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Repli: get_clone(attacks.Repli),
+        Onde_Boreale: get_clone(attacks.Onde_Boreale),
+        Laser_Glace: get_clone(attacks.Laser_Glace)
     },
     enemy: {}
 }, {
@@ -2948,10 +2963,10 @@ let pkms = [{
     vit: 70,
     spe: 85,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Repli: get_clone(attacks.Repli),
+        Onde_Boreale: get_clone(attacks.Onde_Boreale),
+        Laser_Glace: get_clone(attacks.Laser_Glace)
     },
     enemy: {}
 }, {
@@ -2982,10 +2997,11 @@ let pkms = [{
     vit: 95,
     spe: 115,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Lechouille: get_clone(attacks.Lechouille),
+        Tenebre: get_clone(attacks.Tenebre),
+        Devoreve: get_clone(attacks.Devoreve),
+        Psyko: get_clone(attacks.Psyko)
+
     },
     enemy: {}
 }, {
@@ -2999,10 +3015,10 @@ let pkms = [{
     vit: 110,
     spe: 130,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Lechouille: get_clone(attacks.Lechouille),
+        Tenebre: get_clone(attacks.Tenebre),
+        Tonnerre: get_clone(attacks.Tonnerre),
+        Psyko: get_clone(attacks.Psyko)
     },
     enemy: {}
 }, {
@@ -3017,9 +3033,9 @@ let pkms = [{
     spe: 30,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Jet_pierre: get_clone(attacks.Jet_pierre),
+        Souplesse: get_clone(attacks.Souplesse),
+        Protection: get_clone(attacks.Protection)
     },
     enemy: {}
 }, {
@@ -3033,10 +3049,10 @@ let pkms = [{
     vit: 42,
     spe: 90,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
+        Ecras_face: get_clone(attacks.Ecras_face),
+        Yoga: get_clone(attacks.Yoga),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Psyko: get_clone(attacks.Psyko)
     },
     enemy: {}
 }, {
@@ -3050,10 +3066,10 @@ let pkms = [{
     vit: 67,
     spe: 115,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
+        Ecras_face: get_clone(attacks.Ecras_face),
+        Yoga: get_clone(attacks.Yoga),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Psyko: get_clone(attacks.Psyko)
     },
     enemy: {}
 }, {
@@ -3067,10 +3083,10 @@ let pkms = [{
     vit: 50,
     spe: 25,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Ecume: get_clone(attacks.Ecume),
+        Armure: get_clone(attacks.Armure),
+        Bulles_D_O: get_clone(attacks.Bulles_D_O),
+        Souplesse: get_clone(attacks.Souplesse)
     },
     enemy: {}
 }, {
@@ -3084,10 +3100,10 @@ let pkms = [{
     vit: 75,
     spe: 50,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Ecume: get_clone(attacks.Ecume),
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Bulles_D_O: get_clone(attacks.Bulles_D_O),
+        Souplesse: get_clone(attacks.Souplesse)
     },
     enemy: {}
 }, {
@@ -3101,10 +3117,10 @@ let pkms = [{
     vit: 100,
     spe: 55,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Eclair: get_clone(attacks.Eclair),
+        Meteores: get_clone(attacks.Meteores),
+        Tonnerre: get_clone(attacks.Tonnerre),
+        Charge: get_clone(attacks.Charge)
     },
     enemy: {}
 }, {
@@ -3118,10 +3134,10 @@ let pkms = [{
     vit: 140,
     spe: 80,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Eclair: get_clone(attacks.Eclair),
+        Meteores: get_clone(attacks.Meteores),
+        Tonnerre: get_clone(attacks.Tonnerre),
+        Fatal_foudre: get_clone(attacks.Fatal_foudre)
     },
     enemy: {}
 }, {
@@ -3135,10 +3151,10 @@ let pkms = [{
     vit: 40,
     spe: 60,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Pilonnage: get_clone(attacks.Pilonnage),
+        Protection: get_clone(attacks.Protection),
+        Vampigraine: get_clone(attacks.Vampigraine),
+        Choc_mental: get_clone(attacks.Choc_mental)
     },
     enemy: {}
 }, {
@@ -3152,10 +3168,10 @@ let pkms = [{
     vit: 55,
     spe: 125,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
+        Pilonnage: get_clone(attacks.Pilonnage),
+        Ecrasement: get_clone(attacks.Ecrasement),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Bomb_oeuf: get_clone(attacks.Bomb_oeuf)
     },
     enemy: {}
 }, {
@@ -3169,10 +3185,10 @@ let pkms = [{
     vit: 35,
     spe: 40,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Massd_Os: get_clone(attacks.Massd_Os),
+        Puissance: get_clone(attacks.Puissance),
+        Osmerang: get_clone(attacks.Osmerang)
     },
     enemy: {}
 }, {
@@ -3186,10 +3202,10 @@ let pkms = [{
     vit: 45,
     spe: 50,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Massd_Os: get_clone(attacks.Massd_Os),
+        Puissance: get_clone(attacks.Puissance),
+        Osmerang: get_clone(attacks.Osmerang)
     },
     enemy: {}
 }, {
@@ -3203,10 +3219,10 @@ let pkms = [{
     vit: 87,
     spe: 35,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Double_pied: get_clone(attacks.Double_pied),
+        Yoga: get_clone(attacks.Yoga),
+        Mawashi_Geri: get_clone(attacks.Mawashi_Geri),
+        Ultimawhashi: get_clone(attacks.Ultimawhashi)
     },
     enemy: {}
 }, {
@@ -3220,10 +3236,10 @@ let pkms = [{
     vit: 76,
     spe: 35,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Poing_Comete: get_clone(attacks.Poing_Comete),
+        Poing_De_Feu: get_clone(attacks.Poing_De_Feu),
+        Ultimapoing: get_clone(attacks.Ultimapoing),
+        Hate: get_clone(attacks.Hate)
     },
     enemy: {}
 }, {
@@ -3237,10 +3253,10 @@ let pkms = [{
     vit: 30,
     spe: 60,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Boul_armure: get_clone(attacks.Boul_armure),
+        Ligotage: get_clone(attacks.Ligotage),
+        Souplesse: get_clone(attacks.Souplesse),
+        Grincement: get_clone(attacks.Grincement)
     },
     enemy: {}
 }, {
@@ -3254,10 +3270,8 @@ let pkms = [{
     vit: 35,
     spe: 60,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Detritus: get_clone(attacks.Detritus),
+        Acide: get_clone(attacks.Acide)
     },
     enemy: {}
 }, {
@@ -3271,10 +3285,9 @@ let pkms = [{
     vit: 60,
     spe: 85,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Detritus: get_clone(attacks.Detritus),
+        Acide: get_clone(attacks.Acide),
+        Coupe: get_clone(attacks.Coupe),
     },
     enemy: {}
 }, {
@@ -3288,10 +3301,10 @@ let pkms = [{
     vit: 25,
     spe: 30,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Koud_Korne: get_clone(attacks.Koud_Korne),
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Furie: get_clone(attacks.Furie),
+        Belier: get_clone(attacks.Belier)
     },
     enemy: {}
 }, {
@@ -3305,10 +3318,10 @@ let pkms = [{
     vit: 40,
     spe: 45,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Koud_Korne: get_clone(attacks.Koud_Korne),
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Furie: get_clone(attacks.Furie),
+        Belier: get_clone(attacks.Belier)
     },
     enemy: {}
 }, {
@@ -3322,10 +3335,10 @@ let pkms = [{
     vit: 50,
     spe: 105,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Bomb_oeuf: get_clone(attacks.Bomb_oeuf),
+        E_coque: get_clone(attacks.E_coque),
+        liliput: get_clone(attacks.liliput),
+        Damocles: get_clone(attacks.Damocles)
     },
     enemy: {}
 }, {
@@ -3339,10 +3352,10 @@ let pkms = [{
     vit: 60,
     spe: 100,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Constriction: get_clone(attacks.Constriction),
+        Croissance: get_clone(attacks.Croissance),
+        Fouet_Lianes: get_clone(attacks.Fouet_Lianes),
+        Souplesse: get_clone(attacks.Souplesse)
     },
     enemy: {}
 }, {
@@ -3356,10 +3369,10 @@ let pkms = [{
     vit: 90,
     spe: 40,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Morsure: get_clone(attacks.Morsure),
+        Poing_Comete: get_clone(attacks.Poing_Comete),
+        Ultimapoing: get_clone(attacks.Ultimapoing),
+        Uppercut: get_clone(attacks.Uppercut)
     },
     enemy: {}
 }, {
@@ -3373,10 +3386,10 @@ let pkms = [{
     vit: 60,
     spe: 70,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        ecume: get_clone(attacks.ecume),
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Puissance: get_clone(attacks.Puissance),
+        Hate: get_clone(attacks.Hate)
     },
     enemy: {}
 }, {
@@ -3390,10 +3403,10 @@ let pkms = [{
     vit: 85,
     spe: 95,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        ecume: get_clone(attacks.ecume),
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Puissance: get_clone(attacks.Puissance),
+        Hydrocanon: get_clone(attacks.Hydrocanon)
     },
     enemy: {}
 }, {
@@ -3407,10 +3420,10 @@ let pkms = [{
     vit: 63,
     spe: 50,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Picpic: get_clone(attacks.Picpic),
+        Koud_Korne: get_clone(attacks.Koud_Korne),
+        Furie: get_clone(attacks.Furie)
     },
     enemy: {}
 }, {
@@ -3424,10 +3437,10 @@ let pkms = [{
     vit: 68,
     spe: 80,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Picpic: get_clone(attacks.Picpic),
+        Koud_Korne: get_clone(attacks.Koud_Korne),
+        Hydrocanon: get_clone(attacks.Hydrocanon)
     },
     enemy: {}
 }, {
@@ -3442,9 +3455,9 @@ let pkms = [{
     spe: 70,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
+        Soin: get_clone(attacks.Soin),
+        liliput: get_clone(attacks.liliput)
     },
     enemy: {}
 }, {
@@ -3459,9 +3472,9 @@ let pkms = [{
     spe: 100,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
+        Soin: get_clone(attacks.Soin),
+        Hydrocanon: get_clone(attacks.Hydrocanon)
     },
     enemy: {}
 }, {
@@ -3475,10 +3488,10 @@ let pkms = [{
     vit: 90,
     spe: 100,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
+        Bouclier: get_clone(attacks.Bouclier),
+        Yoga: get_clone(attacks.Yoga),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Psyko: get_clone(attacks.Psyko)
     },
     enemy: {}
 }, {
@@ -3492,10 +3505,10 @@ let pkms = [{
     vit: 105,
     spe: 55,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Vive_Attaque: get_clone(attacks.Vive_Attaque),
+        Hate: get_clone(attacks.Hate),
+        Reflet: get_clone(attacks.Reflet)
     },
     enemy: {}
 }, {
@@ -3509,10 +3522,10 @@ let pkms = [{
     vit: 95,
     spe: 95,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Ecras_face: get_clone(attacks.Ecras_face),
+        Lechouille: get_clone(attacks.Lechouille),
+        Poinglace: get_clone(attacks.Poinglace),
+        Plaquage: get_clone(attacks.Plaquage)
     },
     enemy: {}
 }, {
@@ -3526,10 +3539,10 @@ let pkms = [{
     vit: 95,
     spe: 95,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Eclair: get_clone(attacks.Eclair),
+        Balayage: get_clone(attacks.Balayage),
+        Meteores: get_clone(attacks.Meteores),
+        Poing_Eclair: get_clone(attacks.Poing_Eclair)
     },
     enemy: {}
 }, {
@@ -3543,10 +3556,10 @@ let pkms = [{
     vit: 93,
     spe: 85,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Flammeche: get_clone(attacks.Flammeche),
+        Poing_De_Feu: get_clone(attacks.Poing_De_Feu),
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Deflagration: get_clone(attacks.Deflagration)
     },
     enemy: {}
 }, {
@@ -3560,10 +3573,10 @@ let pkms = [{
     vit: 85,
     spe: 55,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Puissance: get_clone(attacks.Puissance),
+        Croissance: get_clone(attacks.Croissance),
+        Frappe_Atlas: get_clone(attacks.Frappe_Atlas),
+        Mania: get_clone(attacks.Mania)
     },
     enemy: {}
 }, {
@@ -3578,9 +3591,9 @@ let pkms = [{
     spe: 70,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Koud_Korne: get_clone(attacks.Koud_Korne),
+        Mania: get_clone(attacks.Mania)
     },
     enemy: {}
 }, {
@@ -3594,10 +3607,7 @@ let pkms = [{
     vit: 80,
     spe: 20,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Trempette: get_clone(attacks.Trempette)
     },
     enemy: {}
 }, {
@@ -3611,10 +3621,10 @@ let pkms = [{
     vit: 81,
     spe: 100,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Morsure: get_clone(attacks.Morsure),
+        Draco_rage: get_clone(attacks.Draco_rage),
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Ultralaser: get_clone(attacks.Ultralaser)
     },
     enemy: {}
 }, {
@@ -3628,10 +3638,10 @@ let pkms = [{
     vit: 60,
     spe: 95,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
+        Hydrocanon: get_clone(attacks.Hydrocanon),
+        Plaquage: get_clone(attacks.Plaquage),
+        Laser_Glace: get_clone(attacks.Laser_Glace)
     },
     enemy: {}
 }, {
@@ -3660,9 +3670,9 @@ let pkms = [{
     spe: 65,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Jet_de_sable: get_clone(attacks.Jet_de_sable),
+        Belier: get_clone(attacks.Belier)
     },
     enemy: {}
 }, {
@@ -3677,9 +3687,9 @@ let pkms = [{
     spe: 110,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Jet_de_sable: get_clone(attacks.Jet_de_sable),
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
+        Hydrocanon: get_clone(attacks.Hydrocanon)
     },
     enemy: {}
 }, {
@@ -3694,9 +3704,9 @@ let pkms = [{
     spe: 110,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Mimi_queue: get_clone(attacks.Mimi_queue),
+        Eclair: get_clone(attacks.Eclair),
+        Hate: get_clone(attacks.Hate)
     },
     enemy: {}
 }, {
@@ -3711,9 +3721,9 @@ let pkms = [{
     spe: 110,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Jet_de_sable: get_clone(attacks.Jet_de_sable),
+        Flammeche: get_clone(attacks.Flammeche),
+        Deflagration: get_clone(attacks.Deflagration)
     },
     enemy: {}
 }, {
@@ -3728,9 +3738,9 @@ let pkms = [{
     spe: 75,
     attacks: {
         Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Rafale_Psy: get_clone(attacks.Rafale_Psy),
+        Soin: get_clone(attacks.Soin),
+        Triplattaque: get_clone(attacks.Triplattaque)
     },
     enemy: {}
 }, {
@@ -3744,10 +3754,10 @@ let pkms = [{
     vit: 35,
     spe: 90,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Constriction: get_clone(attacks.Constriction),
+        Repli: get_clone(attacks.Repli),
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
+        Hydrocanon: get_clone(attacks.Hydrocanon)
     },
     enemy: {}
 }, {
@@ -3761,10 +3771,10 @@ let pkms = [{
     vit: 55,
     spe: 115,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Repli: get_clone(attacks.Repli),
+        Pistolet_a_O: get_clone(attacks.Pistolet_a_O),
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Hydrocanon: get_clone(attacks.Hydrocanon)
     },
     enemy: {}
 }, {
@@ -3778,10 +3788,10 @@ let pkms = [{
     vit: 55,
     spe: 45,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Armure: get_clone(attacks.Armure),
+        Griffe: get_clone(attacks.Griffe),
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Jet_de_sable: get_clone(attacks.Jet_de_sable)
     },
     enemy: {}
 }, {
@@ -3795,10 +3805,10 @@ let pkms = [{
     vit: 80,
     spe: 70,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Armure: get_clone(attacks.Armure),
+        Griffe: get_clone(attacks.Griffe),
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Jet_de_sable: get_clone(attacks.Jet_de_sable)
     },
     enemy: {}
 }, {
@@ -3812,10 +3822,10 @@ let pkms = [{
     vit: 130,
     spe: 60,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Cru_aile: get_clone(attacks.Cru_aile),
+        Morsure: get_clone(attacks.Morsure),
+        Hate: get_clone(attacks.Hate),
+        Belier: get_clone(attacks.Belier)
     },
     enemy: {}
 }, {
@@ -3831,8 +3841,8 @@ let pkms = [{
     attacks: {
         Charge: get_clone(attacks.Charge),
         Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Lechouille: get_clone(attacks.Lechouille),
+        Ultralaser: get_clone(attacks.Ultralaser)
     },
     enemy: {}
 }, {
@@ -3846,9 +3856,9 @@ let pkms = [{
     vit: 85,
     spe: 125,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
+        Tornade: get_clone(attacks.Tornade),
+        Hate: get_clone(attacks.Hate),
+        Laser_Glace: get_clone(attacks.Laser_Glace),
         Blizzard: get_clone(attacks.Blizzard)
     },
     enemy: {}
@@ -3863,10 +3873,10 @@ let pkms = [{
     vit: 100,
     spe: 125,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Eclair: get_clone(attacks.Eclair),
+        Picpic: get_clone(attacks.Picpic),
+        Bec_vrille: get_clone(attacks.Bec_vrille),
+        Fatal_foudre: get_clone(attacks.Fatal_foudre)
     },
     enemy: {}
 }, {
@@ -3880,10 +3890,10 @@ let pkms = [{
     vit: 90,
     spe: 125,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Cru_aile: get_clone(attacks.Cru_aile),
+        Hate: get_clone(attacks.Hate),
+        Lance_Flamme: get_clone(attacks.Lance_Flamme),
+        Lance_Soleil: get_clone(attacks.Lance_Soleil)
     },
     enemy: {}
 }, {
@@ -3897,10 +3907,10 @@ let pkms = [{
     vit: 50,
     spe: 50,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Draco_rage: get_clone(attacks.Draco_rage),
+        Souplesse: get_clone(attacks.Souplesse),
+        Hate: get_clone(attacks.Hate)
     },
     enemy: {}
 }, {
@@ -3914,10 +3924,10 @@ let pkms = [{
     vit: 70,
     spe: 70,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Draco_rage: get_clone(attacks.Draco_rage),
+        Souplesse: get_clone(attacks.Souplesse),
+        Ultralaser: get_clone(attacks.Ultralaser)
     },
     enemy: {}
 }, {
@@ -3931,10 +3941,10 @@ let pkms = [{
     vit: 70,
     spe: 70,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
-        Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Groz_Yeux: get_clone(attacks.Groz_Yeux),
+        Draco_rage: get_clone(attacks.Draco_rage),
+        Souplesse: get_clone(attacks.Souplesse),
+        Ultralaser: get_clone(attacks.Ultralaser)
     },
     enemy: {}
 }, {
@@ -3948,10 +3958,10 @@ let pkms = [{
     vit: 130,
     spe: 154,
     attacks: {
-        Charge: get_clone(attacks.Charge),
-        Amnesie: get_clone(attacks.Amnesie),
         Choc_mental: get_clone(attacks.Choc_mental),
-        Blizzard: get_clone(attacks.Blizzard)
+        Psyko: get_clone(attacks.Psyko),
+        Soin: get_clone(attacks.Soin),
+        Meteores: get_clone(attacks.Meteores)
     },
     enemy: {}
 }, {
