@@ -2,6 +2,44 @@
     margin: 0;
 }
 
+@keyframes att_left {
+    0% {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    50% {
+        margin-left: 10%;
+        margin-right: -10%;
+    }
+    100% {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@keyframes att_right {
+    0% {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    50% {
+        margin-left: -10%;
+        margin-right: 10%;
+    }
+    100% {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+.player_att {
+    animation: att_left 0.5s ease;
+}
+
+.enemy_att {
+    animation: att_right 0.5s ease;
+}
+
 #left,
 #right {
     width: 50%;

@@ -7,8 +7,30 @@ let menu = {
     text: "",
 }
 
+function do_anim(attaquant) {
+    if (attaquant === player) {
+        console.log("a");
+        for (let img of document.querySelectorAll("img")) {
+            img.className = "player_att";
+            let eventListener = img.addEventListener("animationend", function() {
+                img.className = "";
+                img.removeEventListener(eventListener);
+            });
+        }
+    } else {
+        console.log("a");
+        for (let img of document.querySelectorAll("img")) {
+            img.className = "enemy_att";
+            let eventListener = img.addEventListener("animationend", function() {
+                img.className = "";
+                img.removeEventListener(eventListener);
+            });
+        }
+    }
+}
+
 function do_action(attaquant, attack) {
-    console.log(attack.name);
+    do_anim(attaquant);
     if (attaquant.attacks[attack.name].type_att === "pv-") {
         if (attaquant.attacks[attack.name].pui * (attaquant.att / 100) - attaquant.enemy.def / 10 >= 0) {
             attaquant.enemy.pv -= attaquant.attacks[attack.name].pui * (attaquant.att / 100) - attaquant.enemy.def / 10;
