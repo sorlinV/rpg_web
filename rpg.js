@@ -3386,7 +3386,7 @@ let pkms = [{
     vit: 60,
     spe: 70,
     attacks: {
-        ecume: get_clone(attacks.ecume),
+        Ecume: get_clone(attacks.Ecume),
         Groz_Yeux: get_clone(attacks.Groz_Yeux),
         Puissance: get_clone(attacks.Puissance),
         Hate: get_clone(attacks.Hate)
@@ -3403,7 +3403,7 @@ let pkms = [{
     vit: 85,
     spe: 95,
     attacks: {
-        ecume: get_clone(attacks.ecume),
+        Ecume: get_clone(attacks.Ecume),
         Groz_Yeux: get_clone(attacks.Groz_Yeux),
         Puissance: get_clone(attacks.Puissance),
         Hydrocanon: get_clone(attacks.Hydrocanon)
