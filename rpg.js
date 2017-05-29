@@ -14,7 +14,7 @@ function do_anim(attaquant) {
             img.className = "player_att";
             let eventListener = img.addEventListener("animationend", function() {
                 img.className = "";
-                img.removeEventListener(eventListener);
+                img.removeEventListener("animationend", eventListener);
             });
         }
     } else {
@@ -23,7 +23,7 @@ function do_anim(attaquant) {
             img.className = "enemy_att";
             let eventListener = img.addEventListener("animationend", function() {
                 img.className = "";
-                img.removeEventListener(eventListener);
+                img.removeEventListener("animationend", eventListener);
             });
         }
     }
