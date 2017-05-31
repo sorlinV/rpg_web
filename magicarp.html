@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magicarpe</title>
+    <style>
+        * {
+            margin: 0;
+            image-rendering: pixelated;
+        }
+        
+        body {
+            background: lightblue;
+            width: 100%;
+            min-height: 100vh;
+        }
+        
+        #magicarpe {
+            position: absolute;
+            background: url(img/pkm/Magicarpe.png);
+            transition: all 2s ease;
+            left: 10%;
+            top: 10%;
+            width: 10%;
+            height: 20%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        img {
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>0</p>
+    <div id="magicarpe"></div>
+    <script>
+        magic = {
+            elem: document.querySelector("#magicarpe"),
+            food: 100,
+            happy: 100,
+            sleep: 100,
+            pos: {
+                x: 0,
+                y: 0
+            },
+            is_eating: false,
+            mange: function(baie) {
+                return function() {
+                    if (magic.is_eating === false) {
+                        magic.is_eating = true;
+                        magic.pos = baie.pos;
+                        magic.elem.style.left = magic.pos.x + "px";
+                        magic.elem.style.top = magic.pos.y + "px";
+                        setTimeout(function() {
+                            baie.elem.src = "img/ceriz.gif";
+                        }, 1500)
+                        setTimeout(function() {
+                            magic.food += getRandomInt(1, 4);
+                            if (magic.food > 100) {
+                                magic.food = 100;
+                            }
+                            document.querySelector("p").textContent = magic.food + "";
+                            magic.is_eating = false;
+                            baie.elem.remove();
+                        }, 2000);
+                    }
+                }
+            }
+        }
+
+        function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        setInterval(function() {
+            baie = {
+                elem: document.createElement("img"),
+                pos: {
+                    x: getRandomInt(0, document.body.clientWidth * 0.95),
+                    y: getRandomInt(0, document.body.clientHeight * 0.90)
+                }
+            };
+            baie.elem.src = "img/ceriz.png";
+            baie.elem.style.position = "absolute";
+            baie.elem.style.left = baie.pos.x + "px";
+            baie.elem.style.top = baie.pos.y + "px";
+            baie.elem.addEventListener("click", magic.mange(baie));
+            document.body.appendChild(baie.elem);
+            magic.food -= 1;
+            document.querySelector("p").textContent = magic.food + "";
+        }, 5000);
+    </script>
+</body>
+
+</html>
